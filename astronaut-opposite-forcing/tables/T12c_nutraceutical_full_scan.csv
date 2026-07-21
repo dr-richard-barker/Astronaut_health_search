@@ -1,0 +1,38 @@
+signature,tau,wcs,nutraceutical,class,source_food,in_top50
+Food-derived Compounds Apigenin and Luteolin Modulate mRNA Splicing of Introns with Weak Splice Sites GSE128097_1,-100,-0.000299952573578611,apigenin,flavonoid,"parsley, celery, chamomile, citrus, onions, apples, berries, green tea, soy",TRUE
+Food-derived Compounds Apigenin and Luteolin Modulate mRNA Splicing of Introns with Weak Splice Sites GSE128097_2,8.68650056494367,0,apigenin,flavonoid,"parsley, celery, chamomile, citrus, onions, apples, berries, green tea, soy",FALSE
+Food-derived Compounds Apigenin and Luteolin Modulate mRNA Splicing of Introns with Weak Splice Sites GSE128097_1,-100,-0.000299952573578611,luteolin,flavonoid,"parsley, celery, chamomile, citrus, onions, apples, berries, green tea, soy",TRUE
+Food-derived Compounds Apigenin and Luteolin Modulate mRNA Splicing of Introns with Weak Splice Sites GSE128097_2,8.68650056494367,0,luteolin,flavonoid,"parsley, celery, chamomile, citrus, onions, apples, berries, green tea, soy",FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_13,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_14,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_20,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_21,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_25,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_28,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_29,8.67505030515162,-1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,TRUE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_1,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_2,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_3,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_4,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_5,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_6,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_7,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_9,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_10,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_11,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_15,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_16,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_17,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_18,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_19,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_22,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_26,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_27,8.68650056494367,0,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_8,8.69795082473572,1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_12,8.69795082473572,1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_23,8.69795082473572,1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+A total RNA-Seq screen reveals that the splicing inhibitor Isoginkgetin blocks transcription elongation GSE86857_24,8.69795082473572,1.78113056211563e-08,isoginkgetin,flavonoid,ginkgo biloba,FALSE
+"Licochalcone A suppresses the proliferation of sarcoma HT-1080 cells, as a selective R132C mutant IDH1 inhibitor GSE137934_1",-100,-0.00107589744173509,licochalcone a,flavonoid,licorice root (Glycyrrhiza),TRUE
+"Licochalcone A suppresses the proliferation of sarcoma HT-1080 cells, as a selective R132C mutant IDH1 inhibitor GSE137934_1",-100,-0.00107589744173509,licochalcone,flavonoid,licorice root (Glycyrrhiza),TRUE
+Epigenetic reprogramming of melanoma cells by vitamin C treatment GSE121095_1,8.68650056494367,0,vitamin c,vitamin_water_soluble,"citrus, peppers, berries, leafy greens",FALSE
+High-dose Ascorbic acid synergizes with anti-PD1 in a Lymphoma mouse model GSE141444_1,8.68650056494367,0,ascorbic acid,vitamin_water_soluble,"citrus, peppers, berries, leafy greens",FALSE

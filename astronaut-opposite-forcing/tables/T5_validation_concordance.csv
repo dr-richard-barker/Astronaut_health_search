@@ -1,0 +1,6 @@
+"metric","value"
+"n_joined",19484
+"spearman_rho_lfc",0.603
+"sign_agreement",0.7579
+"jaccard_top100",0.1905
+"jaccard_top500",0.2788
