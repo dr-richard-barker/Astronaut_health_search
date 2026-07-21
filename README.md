@@ -90,14 +90,22 @@ The opposite-forcing pipeline is implemented in R; see the Methods section of
 thresholds, and the connectivity-score formulation. The JAXA6 supporting
 analysis was produced with [iDEP](http://bioinformatics.sdstate.edu/idep/).
 
-> **TODO (code availability):** add the R pipeline scripts (or a link to their
-> location) so the meta-analysis, LINCS screen, and gene-level reversal can be
-> regenerated from the OSDR/LINCS inputs.
+## Code availability
+
+The R pipeline — meta-analysis, LINCS L1000 opposite-forcing screen, and
+gene-level flavonoid reversal — is in
+[`astronaut-opposite-forcing/scripts/`](astronaut-opposite-forcing/scripts/),
+with full methods in
+[`astronaut-opposite-forcing/manuscript/manuscript.md`](astronaut-opposite-forcing/manuscript/manuscript.md).
+The independent Python cross-study meta-signature (S2) used for validation lives
+in the companion repository
+[**astronaut-oncogene-biomarkers**](https://github.com/dr-richard-barker/astronaut-oncogene-biomarkers).
 
 ## Related work
 
-- **astronaut-oncogene-biomarkers** — the companion Python cross-study
-  meta-signature (S2) used here for independent validation.
+- [**astronaut-oncogene-biomarkers**](https://github.com/dr-richard-barker/astronaut-oncogene-biomarkers)
+  — the companion Python cross-study meta-signature (S2) used here for
+  independent validation.
 
 ## License
 
