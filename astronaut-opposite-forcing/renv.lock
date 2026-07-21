@@ -1,0 +1,140 @@
+{
+  "R": {
+    "Version": "4.4.3",
+    "Repositories": {
+      "CRAN": "https://cloud.r-project.org/"
+    }
+  },
+  "Packages": {
+    "data.table": {
+      "Package": "data.table",
+      "Version": "1.17.8",
+      "Source": "CRAN"
+    },
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "4.0.3",
+      "Source": "CRAN"
+    },
+    "patchwork": {
+      "Package": "patchwork",
+      "Version": "1.3.2",
+      "Source": "CRAN"
+    },
+    "gridExtra": {
+      "Package": "gridExtra",
+      "Version": "2.3.1",
+      "Source": "CRAN"
+    },
+    "svglite": {
+      "Package": "svglite",
+      "Version": "2.2.2",
+      "Source": "CRAN"
+    },
+    "DESeq2": {
+      "Package": "DESeq2",
+      "Version": "1.46.0",
+      "Source": "Bioconductor"
+    },
+    "limma": {
+      "Package": "limma",
+      "Version": "3.62.1",
+      "Source": "Bioconductor"
+    },
+    "edgeR": {
+      "Package": "edgeR",
+      "Version": "4.4.0",
+      "Source": "Bioconductor"
+    },
+    "biomaRt": {
+      "Package": "biomaRt",
+      "Version": "2.62.0",
+      "Source": "Bioconductor"
+    },
+    "metafor": {
+      "Package": "metafor",
+      "Version": "5.0-1",
+      "Source": "CRAN"
+    },
+    "clusterProfiler": {
+      "Package": "clusterProfiler",
+      "Version": "4.14.0",
+      "Source": "Bioconductor"
+    },
+    "msigdbr": {
+      "Package": "msigdbr",
+      "Version": "26.1.0",
+      "Source": "CRAN"
+    },
+    "fgsea": {
+      "Package": "fgsea",
+      "Version": "1.32.2",
+      "Source": "Bioconductor"
+    },
+    "KEGGREST": {
+      "Package": "KEGGREST",
+      "Version": "1.46.0",
+      "Source": "Bioconductor"
+    },
+    "ComplexHeatmap": {
+      "Package": "ComplexHeatmap",
+      "Version": "2.22.0",
+      "Source": "Bioconductor"
+    },
+    "UpSetR": {
+      "Package": "UpSetR",
+      "Version": "1.4.1",
+      "Source": "CRAN"
+    },
+    "httr": {
+      "Package": "httr",
+      "Version": "1.4.8",
+      "Source": "CRAN"
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "1.8.9",
+      "Source": "CRAN"
+    },
+    "cowplot": {
+      "Package": "cowplot",
+      "Version": "1.2.0",
+      "Source": "CRAN"
+    },
+    "Matrix": {
+      "Package": "Matrix",
+      "Version": "1.7-5",
+      "Source": "CRAN"
+    },
+    "nlme": {
+      "Package": "nlme",
+      "Version": "3.1-169",
+      "Source": "CRAN"
+    },
+    "metadat": {
+      "Package": "metadat",
+      "Version": "1.6-0",
+      "Source": "CRAN"
+    },
+    "numDeriv": {
+      "Package": "numDeriv",
+      "Version": "2016.8-1.1",
+      "Source": "CRAN"
+    },
+    "mathjaxr": {
+      "Package": "mathjaxr",
+      "Version": "2.0-0",
+      "Source": "CRAN"
+    },
+    "pbapply": {
+      "Package": "pbapply",
+      "Version": "1.7-4",
+      "Source": "CRAN"
+    },
+    "digest": {
+      "Package": "digest",
+      "Version": "0.6.39",
+      "Source": "CRAN"
+    }
+  }
+}

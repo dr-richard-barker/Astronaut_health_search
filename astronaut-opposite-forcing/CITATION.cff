@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "astronaut-opposite-forcing: An R pipeline for spaceflight oncogenic biomarker discovery and transcriptomic reversal (opposite-forcing) drug screening"
+type: software
+authors:
+  - family-names: Barker
+    given-names: Richard
+    email: admin@cosecloud.com
+    affiliation: "TODO"
+    # orcid: "https://orcid.org/TODO"
+keywords:
+  - spaceflight
+  - microgravity
+  - space radiation
+  - transcriptomics
+  - oncogenic signatures
+  - drug repurposing
+  - LINCS L1000
+  - connectivity map
+  - opposite forcing
+  - nutraceuticals
+  - meta-analysis
+  - NASA OSDR
+  - PrimeKG
+  - Open Targets
+license: MIT
+repository-code: "https://github.com/dr-richard-barker/astronaut-opposite-forcing"
+version: "1.0.0"
+date-released: "2026-07-19"
+preferred-citation:
+  type: software
+  title: "astronaut-opposite-forcing: An R pipeline for spaceflight oncogenic biomarker discovery and transcriptomic reversal (opposite-forcing) drug screening"
+  authors:
+    - family-names: Barker
+      given-names: Richard
+      email: admin@cosecloud.com
+  year: 2026
+  url: "https://github.com/dr-richard-barker/astronaut-opposite-forcing"
