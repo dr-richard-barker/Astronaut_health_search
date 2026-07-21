@@ -101,6 +101,20 @@ The independent Python cross-study meta-signature (S2) used for validation lives
 in the companion repository
 [**astronaut-oncogene-biomarkers**](https://github.com/dr-richard-barker/astronaut-oncogene-biomarkers).
 
+## Requirements
+
+> **TODO:** pin exact package versions (add an `renv.lock` or the output of
+> `sessionInfo()`).
+
+- **R** (≥ 4.x) — the core opposite-forcing pipeline.
+- **Key R packages** named in the Methods: `DESeq2` (per-study differential
+  expression), `metafor` (REML random-effects meta-analysis), `biomaRt`
+  (rodent → human ortholog mapping).
+- **Reference resources:** LINCS L1000 drug perturbation signatures, MSigDB C6,
+  KEGG, Broad Drug Repurposing Hub, PrimeKG, Open Targets.
+- **Reproducibility:** add a pinned environment file so reviewers can restore the
+  exact package set.
+
 ## Related work
 
 - [**astronaut-oncogene-biomarkers**](https://github.com/dr-richard-barker/astronaut-oncogene-biomarkers)
