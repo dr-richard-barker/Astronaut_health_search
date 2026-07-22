@@ -1,0 +1,76 @@
+% npj_microgravity.tex - Main manuscript file for npj Microgravity
+% This file is a ready-to-edit skeleton that pulls together sections and figures.
+% It attempts to use Nature's 'nature' document class if available; otherwise falls
+% back to the standard article class. Replace or adapt to the official npj Microgravity
+% LaTeX template if you have it from the journal submission site.
+
+\IfFileExists{nature.cls}{
+  \documentclass{nature}
+}{
+  \documentclass[11pt,a4paper]{article}
+}
+
+% Common packages
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{geometry}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{doi}
+
+\geometry{margin=1in}
+
+% Title and authors - fill in
+\title{Title: Spaceflight oncogenic biomarker discovery and 'opposite-forcing' reversal screen}
+\author[1]{First Author}
+\author[1]{Second Author}
+\author[2]{dr-richard-barker}
+\affil[1]{Affiliation A}
+\affil[2]{Affiliation B}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Abstract (pulled from sections/abstract.tex)
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+% Keywords - optional
+\vspace{1em}
+\noindent\textbf{Keywords:} spaceflight; biomarker; LINCS L1000; RNA-seq; opposite-forcing; flavonoids
+
+% Main sections (each section is a separate file in sections/)
+\input{sections/introduction.tex}
+\input{sections/methods.tex}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+
+% Figures (examples) - figures are expected in ../figures/
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../figures/figure1.png}
+  \caption{Example figure 1 caption. Replace with actual figure file (PNG/PDF/TIFF).}
+  \label{fig:fig1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{../figures/figure2.png}
+  \caption{Example figure 2 caption.}
+  \label{fig:fig2}
+\end{figure}
+
+\input{sections/acknowledgements.tex}
+
+% Bibliography
+\clearpage
+\bibliographystyle{naturemag}
+\bibliography{manuscript}
+
+\end{document}
