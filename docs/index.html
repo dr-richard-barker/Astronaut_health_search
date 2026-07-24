@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home · Astronaut Health Search</title>
+<meta name="description" content="Spaceflight oncogenic biomarkers and their transcriptomic reversal by food-derived flavonoids — an opposite-forcing R pipeline over NASA OSDR and LINCS L1000. FAIR data and code.">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<header class="site"><nav>
+  <span class="brand">🧬 Astronaut Health Search</span>
+  <a href="#abstract" style="color:var(--accent)">Abstract</a>
+  <a href="#highlights">Highlights</a>
+  <a href="#figures">Figures</a>
+  <a href="#data">Data &amp; code</a>
+  <a href="https://github.com/dr-richard-barker/Astronaut_health_search">GitHub ↗</a>
+</nav></header>
+<main>
+<section class="hero">
+  <h1>Spaceflight oncogenic biomarkers &amp; their reversal by food-derived flavonoids</h1>
+  <p class="lede">An "opposite-forcing" drug-discovery pipeline: re-derive a reproducible
+     oncogenic biomarker signature across human and rodent spaceflight transcriptomes,
+     then screen drug and nutraceutical perturbation signatures for the compounds that
+     reverse it.</p>
+  <div class="badges">
+    <span class="badge">CC0-1.0</span><span class="badge">FAIR</span>
+    <span class="badge">R pipeline</span><span class="badge">NASA OSDR</span>
+    <span class="badge">LINCS L1000</span><span class="badge">metafor meta-analysis</span>
+  </div>
+  <div class="btnrow">
+    <a class="btn primary" href="https://github.com/dr-richard-barker/Astronaut_health_search/blob/main/astronaut-opposite-forcing/manuscript/manuscript.md">Read the manuscript →</a>
+    <a class="btn" href="#figures">Figures</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/scripts">Pipeline code</a>
+    <a class="btn" href="https://github.com/dr-richard-barker/Astronaut_health_search">Code &amp; data (GitHub)</a>
+  </div>
+  <p class="lede"><b>Headline:</b> a <b>1,610-gene</b> spaceflight oncogenic biomarker
+  signature, re-derived across 23 OSDR studies, is most strongly reversed by the
+  food-derived flavonoids <em>apigenin</em>, <em>luteolin</em> and <em>licochalcone A</em>,
+  which counter-regulate inflammatory and senescence-associated chemokines.</p>
+</section>
+
+<h2 id="abstract">Abstract</h2>
+<div class="content"><p>Spaceflight exposes tissues to microgravity and ionising radiation,
+stressors independently linked to proliferation, DNA-damage, senescence and
+immune-surveillance changes that overlap with early cancer biology. We built a
+from-scratch R pipeline that (1) re-discovers a spaceflight oncogenic biomarker
+signature across <b>23 NASA OSDR RNA-seq studies</b> (11 human, 12 rodent) using strict
+differential-expression thresholds and a random-effects meta-analysis
+(<code>metafor</code> REML), (2) screens <b>420 LINCS L1000</b> drug perturbation
+signatures for transcriptomic reversal via a tau-analog connectivity score, (3)
+annotates top hits with drug-target-indication context (Broad Drug Repurposing Hub,
+PrimeKG), (4) maps the signature to disease phenotypes (PrimeKG, Open Targets), and
+(5) flags nutraceutical candidates. The meta-analysis scored 40,211 genes (3,668
+significant), whose intersection with an 11,241-gene oncogene union yielded
+<b>1,610 oncogenic biomarker genes</b>; validation against an independent Python
+meta-signature showed Spearman&nbsp;ρ&nbsp;=&nbsp;0.60. Twenty-one compounds showed
+maximal reversal (τ&nbsp;=&nbsp;−100), led by the flavonoids apigenin, luteolin and
+licochalcone A. At the gene level, <b>242 of 1,540 assessable biomarker genes (15.7%)</b>
+were directly reversed by at least one flavonoid signature — most strongly the
+inflammatory / SASP chemokines CXCL8, MMP3, CSF2, CSF3 and CXCL3. Disease enrichment
+implicated carcinoma, coronary artery disease and hereditary cancer syndromes. The
+results nominate dietary flavonoids as candidate countermeasure agents for prospective
+validation.</p><hr /></div>
+
+<h2 id="highlights">Highlights</h2>
+<div class="cards">
+  <div class="card"><h3>Cross-species signature</h3>
+    <p><span class="k">1,610</span> oncogenic biomarker genes re-derived across <span class="k">23</span> OSDR spaceflight studies (11 human, 12 rodent); ρ&nbsp;=&nbsp;0.60 vs an independent meta-signature.</p></div>
+  <div class="card"><h3>Opposite-forcing screen</h3>
+    <p><span class="k">420</span> LINCS L1000 drug signatures screened; <span class="k">21</span> compounds at maximal reversal (τ&nbsp;=&nbsp;−100).</p></div>
+  <div class="card"><h3>Nutraceutical hits</h3>
+    <p>Led by food-derived flavonoids <em>apigenin</em>, <em>luteolin</em>, <em>licochalcone A</em>.</p></div>
+  <div class="card"><h3>Gene-level reversal</h3>
+    <p><span class="k">242 / 1,540</span> biomarker genes (15.7%) directly reversed; inflammatory &amp; SASP chemokines most strongly counter-regulated.</p></div>
+</div>
+
+<h2 id="figures">Selected figures</h2>
+<div class="gallery">
+  <figure><a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/figures"><img src="assets/figures/F4_oncogene_intersection.png" alt="Oncogene intersection yielding the 1,610-gene biomarker signature."></a><figcaption>F4 — Intersection of spaceflight-significant genes with the oncogene union → 1,610 biomarker genes.</figcaption></figure>
+  <figure><a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/figures"><img src="assets/figures/F6_lincs_reversal_ranking.png" alt="LINCS L1000 reversal ranking; flavonoids among the top opposite-forcing compounds."></a><figcaption>F6 — LINCS L1000 reversal ranking; 21 compounds at τ = −100, led by flavonoids.</figcaption></figure>
+  <figure><a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/figures"><img src="assets/figures/F11_gene_level_reversal.png" alt="Gene-level reversal of oncogenic biomarkers by food-derived flavonoids."></a><figcaption>F11 — Gene-level reversal: 242/1,540 biomarker genes counter-regulated by ≥1 flavonoid.</figcaption></figure>
+</div>
+
+<h2 id="data">Data &amp; code</h2>
+<div class="content"><ul>
+  <li><b>Manuscript:</b> <a href="https://github.com/dr-richard-barker/Astronaut_health_search/blob/main/astronaut-opposite-forcing/manuscript/manuscript.md">Markdown</a>
+      · npj-styled LaTeX in <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/manuscript/latex"><code>manuscript/latex/</code></a></li>
+  <li><b>Pipeline (R):</b> <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/scripts"><code>scripts/</code></a>
+      (01 OSD query → 07 gene-level reversal) with reusable modules in <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/R"><code>R/</code></a>
+      and a one-command driver <a href="https://github.com/dr-richard-barker/Astronaut_health_search/blob/main/astronaut-opposite-forcing/run_all.R"><code>run_all.R</code></a></li>
+  <li><b>Result tables:</b> <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/tables"><code>tables/</code></a>
+      (T3 meta-signature, T4 oncogene intersection, T6/T7 reversal scores, T11–T13 enrichment &amp; reversal)</li>
+  <li><b>Figures:</b> <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/astronaut-opposite-forcing/figures"><code>figures/</code></a> (F1–F12)</li>
+  <li><b>Supporting JAXA6 data:</b> <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/data"><code>data/</code></a>
+      and <a href="https://github.com/dr-richard-barker/Astronaut_health_search/tree/main/figures"><code>figures/</code></a> (iDEP human-cell RNA-seq)</li>
+</ul>
+<p class="note">Independent research. Not affiliated with or endorsed by NASA or JAXA.
+Reference data (NASA OSDR, LINCS L1000, JAXA) remain subject to their own terms; cite
+the original accessions.</p></div>
+</main>
+<footer class="site">
+  Astronaut Health Search — spaceflight oncogenic biomarkers &amp; opposite-forcing drug discovery ·
+  FAIR data &amp; code ·
+  <a href="https://github.com/dr-richard-barker/Astronaut_health_search">GitHub</a>
+</footer></body></html>
