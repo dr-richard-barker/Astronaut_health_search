@@ -125,12 +125,19 @@
       var gl = el("li"); var gh = el("div",{class:"group"}); gh.textContent = g.name;
       gl.appendChild(gh); sl.appendChild(gl);
       g.items.forEach(function(it){
-        var li = el("li");
-        var a = el("a", {href:it.url});
-        if(it.id === slug){ a.className = "current"; }
-        a.innerHTML = esc(it.title) + (it.desc? "<small>"+esc(it.desc)+"</small>":"")
-          + (it.live===false? '<small style="color:var(--muted)">· page pending</small>':"");
-        li.appendChild(a); sl.appendChild(li);
+        var li = el("li"), node;
+        if(it.live === false || !it.url){
+          // not published yet — render as plain text, not a dead link (no 404)
+          node = el("span", {class:"pending"});
+          node.style.cssText = "display:block;padding:9px 20px;font-size:.9rem;line-height:1.25;color:var(--muted);cursor:default";
+          node.innerHTML = esc(it.title) + (it.desc? "<small>"+esc(it.desc)+"</small>":"")
+            + '<small style="color:var(--muted)">· page pending</small>';
+        } else {
+          node = el("a", {href:it.url});
+          if(it.id === slug){ node.className = "current"; }
+          node.innerHTML = esc(it.title) + (it.desc? "<small>"+esc(it.desc)+"</small>":"");
+        }
+        li.appendChild(node); sl.appendChild(li);
       });
     });
     sitePanel.appendChild(sl);
