@@ -1,0 +1,100 @@
+/* ============================================================================
+   COSE overlay theme  (v0.1) — for pages that ALREADY have their own CSS.
+   Load this AFTER the page's own stylesheet. It does two things only:
+     1. Re-points the shared design tokens to the COSE / radiation-page palette
+        (so existing components that use var(--accent) etc. re-skin to match).
+     2. Adds the toggleable left map rail + the COSE brand chrome.
+   It deliberately does NOT restyle h1/h2/.btn/.card etc. — the host page keeps
+   its own component styles; only colours + the map/brand are unified.
+
+   From-scratch pages (e.g. the radiation page) use the fuller `theme.css`
+   instead; this overlay is the drop-in for the existing styled sites.
+   ========================================================================== */
+
+/* ---- 1. token unification (COSE palette) ---- */
+:root{
+  --bg:#ffffff; --fg:#1a2230; --muted:#5a6473; --line:#e5e9f0;
+  --card:#f7f9fc; --accent:#3B6EA5; --accent2:#3FB6A8;
+  --rail:288px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f141b; --fg:#e6ebf2; --muted:#9aa6b6; --line:#232c39;
+         --card:#161d27; --accent:#6ea3d8; --accent2:#54c9ba; }
+}
+
+/* If the host page has a sticky top nav, reserve room so the fixed COSE
+   logo + Map toggle don't overlap its leading brand. Harmless otherwise. */
+header.site nav{ padding-left:96px }
+@media (max-width:560px){ header.site nav{ padding-left:84px } }
+
+/* ============================================================================
+   2. LEFT MAP RAIL + COSE BRAND  (identical behaviour to theme.css)
+   ========================================================================== */
+.topbar{position:fixed;top:12px;left:12px;z-index:40;display:flex;align-items:center;gap:8px}
+.cose-brand{display:inline-flex;align-items:center;line-height:0}
+.cose-brand img{height:30px;width:30px;display:block;border-radius:7px}
+.cose-brand:hover{filter:brightness(1.05)}
+
+.map-toggle{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 12px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--card);color:var(--fg);
+  font:600 .85rem/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.map-toggle:hover{filter:brightness(.98)}
+.map-toggle .bars{display:inline-block;width:16px;height:12px;position:relative}
+.map-toggle .bars::before,.map-toggle .bars::after,.map-toggle .bars span{
+  content:"";position:absolute;left:0;right:0;height:2px;border-radius:2px;background:currentColor}
+.map-toggle .bars::before{top:0}.map-toggle .bars span{top:5px}.map-toggle .bars::after{top:10px}
+.map-toggle .lbl{display:none}
+@media (min-width:900px){ .map-toggle .lbl{display:inline} }
+
+.sitebar{
+  position:fixed;top:0;left:0;bottom:0;width:var(--rail);z-index:39;
+  background:var(--card);border-right:1px solid var(--line);
+  transform:translateX(-100%);transition:transform .22s ease;
+  overflow-y:auto;padding:64px 0 24px;
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body.map-open .sitebar{transform:translateX(0)}
+.sitebar .panel{padding:14px 20px}
+.sitebar h4{margin:0 0 4px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.sitebar .switch{display:flex;gap:4px;margin:0 20px 6px;
+  background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:3px}
+.sitebar .switch button{flex:1;border:0;background:transparent;color:var(--muted);
+  font:600 .82rem/1 inherit;padding:7px 6px;border-radius:6px;cursor:pointer}
+.sitebar .switch button[aria-selected="true"]{background:var(--accent);color:#fff}
+
+.docmap{list-style:none;margin:6px 0 0;padding:0}
+.docmap li{margin:0}
+.docmap a{display:block;padding:6px 20px;color:var(--muted);
+  font-size:.9rem;border-left:2px solid transparent;line-height:1.35;text-decoration:none}
+.docmap a:hover{color:var(--fg)}
+.docmap a.active{color:var(--accent);border-left-color:var(--accent);
+  background:linear-gradient(90deg,rgba(59,110,165,.08),transparent)}
+.docmap a.lvl-3{padding-left:34px;font-size:.85rem}
+
+.sitemap{list-style:none;margin:6px 0 0;padding:0}
+.sitemap li{margin:0}
+.sitemap a{display:block;padding:9px 20px;color:var(--fg);font-size:.9rem;line-height:1.25;text-decoration:none}
+.sitemap a:hover{background:rgba(59,110,165,.06)}
+.sitemap a.current{border-left:2px solid var(--accent2);background:rgba(63,182,168,.08)}
+.sitemap a small{display:block;color:var(--muted);font-size:.78rem;font-weight:400;margin-top:2px}
+.sitemap .group{padding:14px 20px 4px;font-size:.7rem;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted);font-weight:700}
+
+.map-scrim{position:fixed;inset:0;background:rgba(10,15,22,.38);z-index:38;
+  opacity:0;visibility:hidden;transition:opacity .2s}
+body.map-open .map-scrim{opacity:1;visibility:visible}
+
+.cose-foot{display:inline-flex;align-items:center;gap:6px;vertical-align:middle;margin-right:9px;font-weight:600}
+.cose-foot img{height:20px;width:20px;display:block;border-radius:5px}
+.cose-foot:hover{filter:brightness(1.05);text-decoration:none}
+
+@media (min-width:1180px){
+  body.map-open .page{margin-left:var(--rail)}
+  body.map-open .map-scrim{display:none}
+  .map-toggle{background:transparent;border-color:transparent;box-shadow:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .sitebar{transition:none}.map-scrim{transition:none}
+}
