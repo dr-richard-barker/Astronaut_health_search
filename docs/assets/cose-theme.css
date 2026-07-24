@@ -21,6 +21,31 @@
   :root{ --bg:#0f141b; --fg:#e6ebf2; --muted:#9aa6b6; --line:#232c39;
          --card:#161d27; --accent:#6ea3d8; --accent2:#54c9ba; }
 }
+/* theme.js samples the host page's actual background brightness and tags the
+   rail + toggle so they match a hard-coded-dark (or hard-coded-light) site,
+   regardless of the OS colour-scheme preference. Custom props inherit, so
+   setting them on .sitebar/.topbar re-colours all their descendants only. */
+.sitebar.cose-dark, .topbar.cose-dark{
+  --bg:#0f141b; --fg:#e6ebf2; --muted:#9aa6b6; --line:#2b3543;
+  --card:#161d27; --accent:#6ea3d8; --accent2:#54c9ba; }
+.sitebar.cose-light, .topbar.cose-light{
+  --bg:#ffffff; --fg:#1a2230; --muted:#5a6473; --line:#e5e9f0;
+  --card:#f7f9fc; --accent:#3B6EA5; --accent2:#3FB6A8; }
+.sitebar.cose-dark{background:#161d27;border-right-color:#2b3543}
+
+/* ---- manual light / dark override (the theme toggle sets html[data-theme]) ----
+   Covers the token names used across the site family so the whole page — not
+   just the rail — follows the reader's choice, overriding prefers-color-scheme. */
+html[data-theme="light"]{
+  --bg:#ffffff; --fg:#1a2230; --ink:#1a2230; --muted:#5a6473; --line:#e5e9f0;
+  --border:#e5e9f0; --card:#f7f9fc; --soft:#f7f9fc; --code:#f1f5f9;
+  --accent:#3B6EA5; --accent2:#3FB6A8; color-scheme:light;
+}
+html[data-theme="dark"]{
+  --bg:#0f141b; --fg:#e6ebf2; --ink:#e6ebf2; --muted:#9aa6b6; --line:#232c39;
+  --border:#232c39; --card:#161d27; --soft:#161d27; --code:#0f1a2e;
+  --accent:#6ea3d8; --accent2:#54c9ba; color-scheme:dark;
+}
 
 /* If the host page has a sticky top nav, reserve room so the fixed COSE
    logo + Map toggle don't overlap its leading brand. Harmless otherwise. */
@@ -48,6 +73,17 @@ header.site nav{ padding-left:96px }
 .map-toggle .bars::before{top:0}.map-toggle .bars span{top:5px}.map-toggle .bars::after{top:10px}
 .map-toggle .lbl{display:none}
 @media (min-width:900px){ .map-toggle .lbl{display:inline} }
+
+/* light/dark theme toggle button */
+.cose-theme-btn{display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:34px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--card);color:var(--fg);
+  box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.cose-theme-btn:hover{filter:brightness(.98)}
+.cose-theme-btn svg{display:block}
+@media (min-width:1180px){
+  body.map-open .cose-theme-btn{background:transparent;border-color:transparent;box-shadow:none}
+}
 
 .sitebar{
   position:fixed;top:0;left:0;bottom:0;width:var(--rail);z-index:39;
